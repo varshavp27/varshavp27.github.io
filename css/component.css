@@ -30,7 +30,7 @@ html, body,
 	outline: none;
 	margin: 25px 0;
 	border-radius: 50%;
-	border: 2px solid #000000;
+	border: 2px solid rgba(200,200,200,0.6);
 }
 
 .no-touch .cbp-fbscroller > nav a:hover {
@@ -53,28 +53,27 @@ html, body,
 	background-attachment: fixed;
 }
 
-#fbsection1 {
-
+#homepart {
 }
 
-#fbsection2 {
-	background-image: url(../images/2.jpg);
+#aboutme {
+	background-image: url(../images/aboutme.jpg);
 }
 
-#fbsection3 {
-	background-image: url(../images/3.jpg);
+#experience {
+	background-image: url(../images/experience.jpg);
 }
 
-#fbsection4 {
-	background-image: url(../images/4.jpg);
+#education {
+	background-image: url(../images/education.jpg);
 }
 
-#fbsection5 {
-	background-image: url(../images/5.jpg);
+#projects {
+	background-image: url(../images/projects.jpg);
 }
 
-#fbsection6 {
-	background-image: url(../images/2.jpg);
+#contact {
+	background-image: url(../images/contact.jpg);
 }
 
 .name-header {
@@ -93,7 +92,7 @@ html, body,
 	font-size: 3em;
 	text-align: center;
 	vertical-align: middle;
-	color: #156EA9;
+	color: #ffffff;
 }
 
 .description-dark {
@@ -102,7 +101,7 @@ html, body,
 	margin-left: 20px;
 	margin-right: 20px;
 	vertical-align: middle;
-	color: #156EA9;
+	color: #ffffff;
 }
 
 .heading {
