@@ -92,7 +92,7 @@ html, body,
 	font-size: 3em;
 	text-align: center;
 	vertical-align: middle;
-	color: #ffffff;
+	color: #000000;
 }
 
 .description-dark {
@@ -101,7 +101,7 @@ html, body,
 	margin-left: 20px;
 	margin-right: 20px;
 	vertical-align: middle;
-	color: #ffffff;
+	color: #000000;
 }
 
 .heading {
