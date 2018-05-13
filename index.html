@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,15 +8,214 @@
 	<meta name="description" content="Varsha Prabhu: Portfolio page" />
 	<meta name="keywords" content="Varsha Prabhu, Portfolio, Profile, Skills" />
 	<meta name="author" content="Varsha Prabhu" />
-	<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta content="Varsha Prabhu" property="og:title">
+<meta content="https://varshavp27@github.io/" property="og:url">
+<meta content="Varsha Prabhu" property="og:site_name">
+<meta content="Varsha Prabhu's Personal Website" property="og:description">
+<meta content="Varsha Prabhu" itemprop="name">
+<meta content="Varsha Prabhu's Personal Website" itemprop="description">
+<meta content="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/1297589/DSC_0193_jb9ejz.jpg" itemprop="image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Varsha Prabhu" name="twitter:title">
+<meta content="Varsha Prabhu's Personal Website" name="twitter:description">
+<meta content="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/1297589/DSC_0193_jb9ejz.jpg" name="twitter:image">
+<meta content="Varsha Prabhu's Personal Website" name="description">
+
+<meta name="support-helper" content="{&quot;permalink&quot;:&quot;anant-maheshwari&quot;,&quot;id&quot;:11709200}">
+<link rel="canonical" href="https://www.anantmaheshwari.com/">
+<script>
+var _strk = _strk || []
+_strk.push = function(arg1, arg2){
+  var _arrayPush = Array.prototype.push.bind(this)
+  if (typeof arg1 === 'string' && typeof arg2 === 'function') {
+    // Support _strk.push(event, fn) for better UX
+    _arrayPush([arg1, arg2])
+  } else {
+    _arrayPush.apply(this, arguments)
+  }
+}
+window.runAfterDomBinding = {
+  add: function(name, fn) {
+    _strk.push(['Page.didMount', fn])
+  }
+}
+</script>
+
+<meta name="google-site-verification" content="">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/default.css"/>
-	<link rel="stylesheet" href="css/component.css"/>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/component.css" />
 	<script src="js/modernizr.custom.js"></script>
+	<style>
+		.panel-transparent {
+			background: none;
+			border: 0;
+		}
+		.fa-icon {
+			background: #FFFFFF;
+			color: #000000;
+			font-size:36px;
+		}
+		
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+	position: fixed;
+	top: 0; 
+    width: 100%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timecontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timecontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .timecontainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timecontainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+	</style>
 </head>
+
 <body>
-	<!-- <div class="container"> -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="#aboutme">About Me</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#moreaboutme">More About Me</a></li>
+			<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
 		<nav>
 			<a href="#homepart" class="cbp-fbcurrent">Section 1</a>
@@ -27,13 +227,13 @@
 		</nav>
 		<section id="homepart">
 			<div class="container">
-				<h2>This webpage is currently being reconstructed</h2>
+				<h2> This website is under reconstruction </h2>
 				<div class="name-header">
 					Varsha Prabhu
 				</div>
 				<div class="intro">
-					Likes to code<br>
-					On a quest for enlightenment
+					I am a software developer at Tesco and I completed my undergraduate studies from National Institute of Technology Karnataka, Surathkal.
+					I am passionate about developing products which help me make a direct impact on people's lives.
 				</div>
 			</div>
 		</section>
@@ -42,57 +242,157 @@
 			<div class="heading-dark">
 				About me
 			</div>
-			<div class="col-md-8 description-dark">
-				I'm an enthu
-				I love computers and programming!<br>
-				In the last three years, I've
-				Languages I have used till date-<br>
-				Python<br>
-				Java<br>
-				C++<br>
-				C<br>
-				ruby<br>
-				<br>
-				Web Frameworks used:<br>
-				Spring, Django<br>
-				<br>
-				Testing frameworks/library used:<br>
-				Junit, Nose, unittest, Mockito<br>
-				<br>
-				Computer Science<br>
-				I have tried to explore(and am still exploring) different fields of CS like Data Structures and Algorithms, Cloud
-				Data Storage,web scraping information security and application
-				development(both mobile and web). Of late, I have been developing an interest in Data Science and Natural Language Processing.
+			<div class="timeline">
+				<div class="timecontainer left">
+					<div class="content">
+					<h2>2005</h2>
+					<p>My interest with Computers started back in 5th grade, when QBASIC was taught at school. At the same time, my uncle was fiddling with Visual
+							Basic. With his encouragement, I learn basic HTML and basic Visual Basic and started developing small games.</p>
+					</div>
+				</div>
+				<div class="timecontainer right">
+					<div class="content">
+						<h2>2009</h2>
+						<p>Fast forward four years, I was learning basic Java at school when I really started getting inclined towards programming. To continue the 
+								interest, I took another course in my 11th and 12th grades where I learn C programming and about pointers. Towards the end of this stint, 
+								I naturally went for Computer Science and Engineering as my major for my bachelors' degree.</p>
+					</div>
+				</div>
+				<div class="timecontainer left">
+					<div class="content">
+						<h2>2013</h2>
+						<p>Since then, the journey has been exciting and overwhelming too, at times. From Data structures, Algorithms, Computer architecture, 
+							operating systems, networks, databases, distributed databases and software engineering to information security, image processing, machine 
+							intelligence, data mining and data warehousing all college courses have opened up different dimensions of learning and thinking in me. Not 
+							to forget the math courses like probability and discrete mathematics.</p>
+					</div>
+				</div>
+				<div class="timecontainer right">
+					<div class="content">
+						<h2>
+							2014
+						</h2>
+						<p>
+							I was fortunate enough to be a part of The Web Enthusiasts' club at college, during my sophomore year. Attending 
+							sessions of Web Club and participating in it's activities gave me an insight about the latest happenings in the technology space, and 
+							more importantly, encouraged me to start solving questions on spoj, codechef, hackerrank and codeforces.
+						</p>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h2>
+							2015
+						</h2>
+						<p>
+							Being a part of the club, I was motivated to learn python in my free time. Basic knowledge of Python, along with some problem solving
+							helped me get a two month long software engineering internship at Bilent Services Private Limited, to work on their product 
+							Kyash. This was when I got the real sense of backend development and what it meant to write production ready code along with other 
+							developers.
 
-
-				Apart from this, Indian music and discussions on any topic interest me.
+							My experience at Bilent and a lot of luck opened doors for me to be a part of CybrHome as a Backend Developer. During this time, I got a 
+							real feel of what it is to work at a very early stage startup. The fast changing dynamics, the need to deliver in time, and the need to
+							be dedicated to the work at a personal level transformed my ways of doing things. This was during the course of the semester, and it was
+							a roller coaster ride to be on par with the work and studies.
+						</p>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h2>
+							2016
+						</h2>
+						<p>
+							I interned at Amazon during the following summer for a brief period of two months. For a person who had been at two startups, 
+							Amazon was a totally different experience. The clear processes, the number of in-house developer tools, the stringent code reviews and 
+							the sheer pace at which so many teams delivered was great to watch and learn from.
+						</p>
+					</div>
+				</div>
 			</div>
+	
 		</section>
 
 		<section id="experience">
 			<div class="heading">
 				Experience
 			</div>
+
 			<div class="description">
-				<div class="col-md-10 well">
-					<div class="col-md-4">
+				<div class="col-md-10 well panel-transparent">
+			
+
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>Tesco</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+								· Built a proof of concept of a referral recommendation system with TescoLabs.
+									 The project has been chosen for productionisation. <br/>
+								· Created RESTful APIs in Java to ingest from and serve ratings and reviews to different online businesses of Tesco.
+								<br/>
+								· Automated the CI/CD pipeline for different microservices on AWS using docker, terraform, jenkins and github.
+								<br/>
+								· Designed and built microservices using SpringBoot to handle storage and processing of reviews and ratings.
+								<br/>
+								· Working on building a system to facilitate automated content moderation 
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
-						Amazon India Development Center
+
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>Amazon</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+								· Designed and developed a service for the transport team
+								<br/> · Worked on persisting the contents of a cache of another service to be able to restore it after deployments
+								<br/> · Techstack: Spring, DynamoDB, Guava
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-10 well">
-					<div class="col-md-4">
+
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>CybrHome</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+									· Did a comparative study of different NoSql databases to store details for profile pages of websites
+									<br/>
+									· Implemented scrapers to fetch profile image links and fetch or guess social media links corresponding 
+									to websites and store them in the database to facilitate a fast search on them.
+									<br/>
+									· Wrote a scraper to scrape out useful information about websites from commoncrawl.org.
+									<br/>
+									· Techstack: Python, MongoDB
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
-						CybrHome
-					</div>
-				</div>
-				<div class="col-md-10 well">
-					<div class="col-md-4">
-					</div>
-					<div class="col-md-4">
-						Bilent Services Private Limited
+
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>Bilent Services Private Limited</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+									· Developed an application to sync customer data in GBs from different clients just before the end of the billing cycle
+									<br/>
+									· Implemented an algorithm to generate permanent kyashcodes for customers and send SMSs to them while billing.
+									<br/>
+									· Techstack: Flask, Google Cloud Datastore
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -103,21 +403,42 @@
 				Education
 			</div>
 			<div class="description-dark">
-				<div class="col-md-10 well">
-					National Institute of Technology, Surathkal<br>
-					I am currently studying here, pursuing the last semester of my Undergraduate Education in Computer Science.<br>
-				</div>
-				<div class="col-md-10 well">
-					Deeksha Centre for Learning Pre-University College<br>
-					I studied my 11th and 12th grade here, enjoyed the most fulfilling two years of education here.
-				</div>
-				<div class="col-md-10 well">
-					The Oxford English School, ICSE <br>
-				</div>
-				<div class="col-md-10 well">
-					The Oxford English School, ICSE <br>
-
-				</div>
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>National Institute of Technology Karnataka, Surathkal</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+									
+							</div>
+						</div>
+					</div>
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>Deeksha Centre for Learning Pre-University College</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+									
+							</div>
+						</div>
+					</div>
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<h4>The Oxford English School, ICSE</h4>
+								</h4>
+							</div>
+							<div class="panel-body">
+									
+							</div>
+						</div>
+					</div>
 			</div>
 		</section>
 
@@ -126,55 +447,78 @@
 				Projects
 			</div>
 			<div class="description">
-				<div class="col-md-3 well">
-					Fuzzy Keyword Search on encrypted data
+				<div class="col-md-3 well panel-transparent">
+						<div class="panel-group">
+							<div class="panel panel-default">
+								Encrypted keyword search
+							</div>
+						</div>
 				</div>
-				<div class="col-md-3 well">
-					SanyuktEdit
+				<div class="col-md-3 well panel-transparent">
+						<div class="panel-group">
+							<div class="panel panel-default">
+								SanyuktEdit
+							</div>
+						</div>
 				</div>
-				<div class="col-md-3 well">
-					Segmentation of Bacteria
-				</div>
-				<div class="col-md-3 well">
+				<div class="col-md-3 well panel-transparent">
+						<div class="panel-group">
+							<div class="panel panel-default">
+								Segmentation of Bacteria
+							</div>
+						</div>
 				</div>
 			</div>
 			<div class="description">
-				<div class="col-md-3 well">
-					File trasnfer in ns-3
+				<div class="col-md-3 well panel-transparent">
+					<div class="panel-group">
+						<div class="panel panel-default">
+								File transfer in ns-3
+						</div>
+					</div>
 				</div>
-				<div class="col-md-3 well">
-					Secret Sandesh
+				<div class="col-md-3 well panel-transparent">
+					<div class="panel-group">
+							<div class="panel panel-default">
+									Secret Sandesh
+							</div>
+						</div>
 				</div>
-				<div class="col-md-3 well">
-					Prediction of trends in gold prices
-				</div>
-				<div class="col-md-3 well">
+				<div class="col-md-3 well panel-transparent">
+					<div class="panel-group">
+							<div class="panel panel-default">
+									Prediction of trends in gold prices
+							</div>
+						</div>	
 				</div>
 			</div>
-	</section>
+		</section>
 
-	<section id="contact">
-		<div class="heading-dark">
-			Let's connect!
-		</div>
-		<div class="description-dark">
-
-		</div>
-	</section>
-</div>
-<!-- </div> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
-<script src="js/jquery.easing.min.js"></script>
-<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
-<script src="js/waypoints.min.js"></script>
-<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
-<script src="js/jquery.debouncedresize.js"></script>
-<script src="js/cbpFixedScrollLayout.min.js"></script>
-<script>
-$(function() {
-	cbpFixedScrollLayout.init();
-});
-</script>
+		<section id="contact">
+			<div class="heading-dark">
+				Let's connect!
+			</div>
+			<div class="description-dark">
+				<a href="https://www.facebook.com/varshavp27"><i class="fa fa-facebook fa-icon"></i></a>
+				<a href="https://www.linkedin.com/in/varshavp27/"><i class="fa fa-linkedin fa-icon"></i></a>
+				<a href="https://github.com/varshavp27"><i class="fa fa-github fa-icon"></i></a>
+			</div>
+		</section>
+	</div>
+	<!-- </div> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+	<script src="js/waypoints.min.js"></script>
+	<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+	<script src="js/jquery.debouncedresize.js"></script>
+	<script src="js/cbpFixedScrollLayout.min.js"></script>
+	<script>
+		$(function () {
+			cbpFixedScrollLayout.init();
+		});
+	</script>
 </body>
+
 </html>
