@@ -1,524 +1,456 @@
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Varsha Prabhu</title>
-	<meta name="description" content="Varsha Prabhu: Portfolio page" />
-	<meta name="keywords" content="Varsha Prabhu, Portfolio, Profile, Skills" />
-	<meta name="author" content="Varsha Prabhu" />
-	<meta content="Varsha Prabhu" property="og:title">
-<meta content="https://varshavp27@github.io/" property="og:url">
-<meta content="Varsha Prabhu" property="og:site_name">
-<meta content="Varsha Prabhu's Personal Website" property="og:description">
-<meta content="Varsha Prabhu" itemprop="name">
-<meta content="Varsha Prabhu's Personal Website" itemprop="description">
-<meta content="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/1297589/DSC_0193_jb9ejz.jpg" itemprop="image">
-<meta content="summary_large_image" name="twitter:card">
-<meta content="Varsha Prabhu" name="twitter:title">
-<meta content="Varsha Prabhu's Personal Website" name="twitter:description">
-<meta content="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_630,w_1200,f_auto,q_auto/v1/1297589/DSC_0193_jb9ejz.jpg" name="twitter:image">
-<meta content="Varsha Prabhu's Personal Website" name="description">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
-<meta name="support-helper" content="{&quot;permalink&quot;:&quot;anant-maheshwari&quot;,&quot;id&quot;:11709200}">
-<link rel="canonical" href="https://www.anantmaheshwari.com/">
-<script>
-var _strk = _strk || []
-_strk.push = function(arg1, arg2){
-  var _arrayPush = Array.prototype.push.bind(this)
-  if (typeof arg1 === 'string' && typeof arg2 === 'function') {
-    // Support _strk.push(event, fn) for better UX
-    _arrayPush([arg1, arg2])
-  } else {
-    _arrayPush.apply(this, arguments)
-  }
-}
-window.runAfterDomBinding = {
-  add: function(name, fn) {
-    _strk.push(['Page.didMount', fn])
-  }
-}
-</script>
 
-<meta name="google-site-verification" content="">
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <link rel="stylesheet" href="assets/css/roboto-railway-webfont.css" />
+        <link rel="stylesheet" href="assets/css/linearicons-web-font.css" />
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="shortcut icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/default.css" />
-	<link rel="stylesheet" href="css/component.css" />
-	<script src="js/modernizr.custom.js"></script>
-	<style>
-		.panel-transparent {
-			background: none;
-			border: 0;
-		}
-		.fa-icon {
-			background: #FFFFFF;
-			color: #000000;
-			font-size:36px;
-		}
-		
-* {
-  box-sizing: border-box;
-}
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-/* Set a background color */
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
 
-.navbar {
-	position: fixed;
-	top: 0; 
-    width: 100%;
-}
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
 
-/* Container around content */
-.timecontainer {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#home"><span>Home</span></a></li>
+                <li><a href="#about"><span>About Me</span></a></li>
+                <li><a href="#features"><span>Features</span></a></li>
+                <li><a href="#experience"><span>Experience</span></a></li>
+                <li><a href="#experience"><span>Education</span></a></li>
+                <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                
+            </ul>
+            <a href="#0" class="cd-close-menu">Close<span></span></a>
+        </nav>
 
-/* The circles on the timeline */
-.timecontainer::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
+        <!--Home page style-->
+        <header id="home" class="home home-main-content">
+            <div class="overlay sections">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="div-menu">
+                            <header class="cd-header">
+                                <div id="cd-logo">
+                                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                                </div>
+                                <a class="cd-menu-trigger" href="#main-nav"><span></span></a>
+                            </header>
+                        </div>
 
-/* Place the container to the left */
-.left {
-  left: 0;
-}
 
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
+                        <div class="home-wrapper">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                                <div class="home-content">
+                                    <h1>Varsha Prabhu</h1>
+                                    <p>Software Development |&nbsp; Machine Learning |&nbsp; Indian Music</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
+        <!-- Sections -->
+        <section id="about" class="sections3">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="about-wrapper">
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="about-photo">
+                                <img src="assets/images/man.png" alt="About Photo" />
+                            </div>
+                        </div>
 
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="about-content text-left">
+                                <h4>Hi, I'm Varsha Prabhu, a computer science and machine learnning enthusiast.</h4>
+                                <p>I'm a Software Development Engineer at Tesco and a computer science graduate from National Institute of Technology Karnataka, Surathkal</p>
+                                <p>I'm passionate about building products that have a direct impact on people's lives and bring value to the society.
+                                As an aspiring Machine Learning Engineer, I'm constantly learning to develop more skills and knowledge in the area of Multilingual NLP and ML for education and healthcare </p>
+                                <a href="#" class="btn btn-default">Let's get in touch!</a>
+                            </div>
+                        </div>
 
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
+                    </div>
+                </div>	
+            </div> <!-- /container -->       
+        </section>
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
+        <!-- Sections -->
+        <!-- <section id="features" class="sections lightbg">
 
-/* Full-width containers */
-  .timecontainer {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
+            <div class="heading-content text-center">
+                <h3>My Working Process</h1>
+                    <p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
+            </div>
 
-/* Make sure that all arrows are pointing leftwards */
-  .timecontainer::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
+            <div class="container text-center">
+                <!-- Example row of columns -->
+                <!-- <div class="row">
+                    <div class="features-wrapper">
 
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg design">
 
-/* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-}
-	</style>
-</head>
+                                <div class="features-item">
+                                    <i class="lnr lnr-screen"></i>
+                                    <h6><a href="#">Design</a></h6>
+                                </div>
 
-<body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<ul class="nav navbar-nav">
-			<li class="active"><a href="#aboutme">About Me</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#moreaboutme">More About Me</a></li>
-			<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div id="cbp-fbscroller" class="cbp-fbscroller">
-		<nav>
-			<a href="#homepart" class="cbp-fbcurrent">Section 1</a>
-			<a href="#aboutme">Section 2</a>
-			<a href="#experience">Section 3</a>
-			<a href="#education">Section 4</a>
-			<a href="#projects">Section 5</a>
-			<a href="#contact">Section 6</a>
-		</nav>
-		<section id="homepart">
-			<div class="container">
-				<h2> This website is under reconstruction </h2>
-				<div class="name-header">
-					Varsha Prabhu
-				</div>
-				<div class="intro">
-					I am a software developer at Tesco and I completed my undergraduate studies from National Institute of Technology Karnataka, Surathkal.
-					I am passionate about developing products which help me make a direct impact on people's lives.
-				</div>
-			</div>
-		</section>
+                            </div>
+                        </div>
 
-		<section id="aboutme">
-			<div class="heading-dark">
-				About me
-			</div>
-			<div class="timeline">
-				<div class="timecontainer left">
-					<div class="content">
-					<h2>2005</h2>
-					<p>My interest with Computers started back in 5th grade, when QBASIC was taught at school. At the same time, my uncle was fiddling with Visual
-							Basic. With his encouragement, I learn basic HTML and basic Visual Basic and started developing small games.</p>
-					</div>
-				</div>
-				<div class="timecontainer right">
-					<div class="content">
-						<h2>2009</h2>
-						<p>Fast forward four years, I was learning basic Java at school when I really started getting inclined towards programming. To continue the 
-								interest, I took another course in my 11th and 12th grades where I learn C programming and about pointers. Towards the end of this stint, 
-								I naturally went for Computer Science and Engineering as my major for my bachelors' degree.</p>
-					</div>
-				</div>
-				<div class="timecontainer left">
-					<div class="content">
-						<h2>2013</h2>
-						<p>Since then, the journey has been exciting and overwhelming too, at times. From Data structures, Algorithms, Computer architecture, 
-							operating systems, networks, databases, distributed databases and software engineering to information security, image processing, machine 
-							intelligence, data mining and data warehousing all college courses have opened up different dimensions of learning and thinking in me. Not 
-							to forget the math courses like probability and discrete mathematics.</p>
-					</div>
-				</div>
-				<div class="timecontainer right">
-					<div class="content">
-						<h2>
-							2014
-						</h2>
-						<p>
-							I was fortunate enough to be a part of The Web Enthusiasts' club at college, during my sophomore year. Attending 
-							sessions of Web Club and participating in it's activities gave me an insight about the latest happenings in the technology space, and 
-							more importantly, encouraged me to start solving questions on spoj, codechef, hackerrank and codeforces.
-						</p>
-					</div>
-				</div>
-				<div>
-					<div>
-						<h2>
-							2015
-						</h2>
-						<p>
-							Being a part of the club, I was motivated to learn python in my free time. Basic knowledge of Python, along with some problem solving
-							helped me get a two month long software engineering internship at Bilent Services Private Limited, to work on their product 
-							Kyash. This was when I got the real sense of backend development and what it meant to write production ready code along with other 
-							developers.
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg development">
 
-							My experience at Bilent and a lot of luck opened doors for me to be a part of CybrHome as a Backend Developer. During this time, I got a 
-							real feel of what it is to work at a very early stage startup. The fast changing dynamics, the need to deliver in time, and the need to
-							be dedicated to the work at a personal level transformed my ways of doing things. This was during the course of the semester, and it was
-							a roller coaster ride to be on par with the work and studies.
-						</p>
-					</div>
-				</div>
-				<div>
-					<div>
-						<h2>
-							2016
-						</h2>
-						<p>
-							I interned at Amazon during the following summer for a brief period of two months. For a person who had been at two startups, 
-							Amazon was a totally different experience. The clear processes, the number of in-house developer tools, the stringent code reviews and 
-							the sheer pace at which so many teams delivered was great to watch and learn from.
-						</p>
-					</div>
-				</div>
-			</div>
-	
-		</section>
+                                <div class="features-item">
+                                    <i class="lnr lnr-magic-wand"></i>
+                                    <h6><a href="#">development</a></h6>
+                                </div>
 
-		<section id="experience">
-			<div class="heading">
-				Experience
-			</div>
+                            </div>
+                        </div>
 
-			<div class="description">
-				<div class="col-md-10 well panel-transparent">
-			
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg testing">
 
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>Tesco</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-								· Built a proof of concept of a referral recommendation system with TescoLabs.
-									 The project has been chosen for productionisation. <br/>
-								· Created RESTful APIs in Java to ingest from and serve ratings and reviews to different online businesses of Tesco.
-								<br/>
-								· Automated the CI/CD pipeline for different microservices on AWS using docker, terraform, jenkins and github.
-								<br/>
-								· Designed and built microservices using SpringBoot to handle storage and processing of reviews and ratings.
-								<br/>
-								· Working on building a system to facilitate automated content moderation 
-							</div>
-						</div>
-					</div>
+                                <div class="features-item">
+                                    <i class="lnr lnr-dinner"></i>
+                                    <h6><a href="#">Testing</a></h6>
+                                </div>
 
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>Amazon</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-								· Designed and developed a service for the transport team
-								<br/> · Worked on persisting the contents of a cache of another service to be able to restore it after deployments
-								<br/> · Techstack: Spring, DynamoDB, Guava
-							</div>
-						</div>
-					</div>
+                            </div>
+                        </div>
 
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>CybrHome</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-									· Did a comparative study of different NoSql databases to store details for profile pages of websites
-									<br/>
-									· Implemented scrapers to fetch profile image links and fetch or guess social media links corresponding 
-									to websites and store them in the database to facilitate a fast search on them.
-									<br/>
-									· Wrote a scraper to scrape out useful information about websites from commoncrawl.org.
-									<br/>
-									· Techstack: Python, MongoDB
-							</div>
-						</div>
-					</div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg launch">
 
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>Bilent Services Private Limited</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-									· Developed an application to sync customer data in GBs from different clients just before the end of the billing cycle
-									<br/>
-									· Implemented an algorithm to generate permanent kyashcodes for customers and send SMSs to them while billing.
-									<br/>
-									· Techstack: Flask, Google Cloud Datastore
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                                <div class="features-item">
+                                    <i class="lnr lnr-rocket"></i>
+                                    <h6><a href="#">Launch</a></h6>
+                                </div>
 
-		<section id="education">
-			<div class="heading-dark">
-				Education
-			</div>
-			<div class="description-dark">
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>National Institute of Technology Karnataka, Surathkal</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-									
-							</div>
-						</div>
-					</div>
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>Deeksha Centre for Learning Pre-University College</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-									
-							</div>
-						</div>
-					</div>
-					<div class="panel-group">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<h4>The Oxford English School, ICSE</h4>
-								</h4>
-							</div>
-							<div class="panel-body">
-									
-							</div>
-						</div>
-					</div>
-			</div>
-		</section>
+                            </div>
+                        </div>
 
-		<section id="projects">
-			<div class="heading">
-				Projects
-			</div>
-			<div class="description">
-				<div class="col-md-3 well panel-transparent">
-						<div class="panel-group">
-							<div class="panel panel-default">
-								Encrypted keyword search
-							</div>
-						</div>
-				</div>
-				<div class="col-md-3 well panel-transparent">
-						<div class="panel-group">
-							<div class="panel panel-default">
-								SanyuktEdit
-							</div>
-						</div>
-				</div>
-				<div class="col-md-3 well panel-transparent">
-						<div class="panel-group">
-							<div class="panel panel-default">
-								Segmentation of Bacteria
-							</div>
-						</div>
-				</div>
-			</div>
-			<div class="description">
-				<div class="col-md-3 well panel-transparent">
-					<div class="panel-group">
-						<div class="panel panel-default">
-								File transfer in ns-3
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 well panel-transparent">
-					<div class="panel-group">
-							<div class="panel panel-default">
-									Secret Sandesh
-							</div>
-						</div>
-				</div>
-				<div class="col-md-3 well panel-transparent">
-					<div class="panel-group">
-							<div class="panel panel-default">
-									Prediction of trends in gold prices
-							</div>
-						</div>	
-				</div>
-			</div>
-		</section>
+                    </div>
+                </div> -->
+            <!-- </div> <!-- /container -->       
+        <!-- </section> --> 
 
-		<section id="contact">
-			<div class="heading-dark">
-				Let's connect!
-			</div>
-			<div class="description-dark">
-				<a href="https://www.facebook.com/varshavp27"><i class="fa fa-facebook fa-icon"></i></a>
-				<a href="https://www.linkedin.com/in/varshavp27/"><i class="fa fa-linkedin fa-icon"></i></a>
-				<a href="https://github.com/varshavp27"><i class="fa fa-github fa-icon"></i></a>
-			</div>
-		</section>
-	</div>
-	<!-- </div> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
-	<script src="js/jquery.easing.min.js"></script>
-	<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
-	<script src="js/waypoints.min.js"></script>
-	<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
-	<script src="js/jquery.debouncedresize.js"></script>
-	<script src="js/cbpFixedScrollLayout.min.js"></script>
-	<script>
-		$(function () {
-			cbpFixedScrollLayout.init();
-		});
-	</script>
-</body>
+        <!-- Sections -->
+        <section id="experience" class="experience">
+            <div class="overlay sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="experience-wrapper">
 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="experience-content">
+
+                                    <h4>Work Experience</h4>
+
+                                    <div class="content-details content-border">
+                                        <h5>Tesco</h5>
+                                        <h6>Jul 2017 - Present</h6>
+                                        <p>· Built a proof of concept of a referral recommendation system with TescoLabs.
+                                                The project has been chosen for productionisation. <br/>
+                                           · Created RESTful APIs in Java to ingest from and serve ratings and reviews to different online businesses of Tesco.
+                                           <br/>
+                                           · Automated the CI/CD pipeline for different microservices on AWS using docker, terraform, jenkins and github.
+                                           <br/>
+                                           · Designed and built microservices using SpringBoot to handle storage and processing of reviews and ratings.
+                                           <br/>
+                                           · Working on building a system to facilitate automated content moderation </p>
+                                    </div>
+
+                                    <div class="content-details content-border">
+                                        <h5>Amazon</h5>
+                                        <h6>May 2016 - Jul 2016</h6>
+                                        <p>· Designed and developed a service for the transport team
+                                                <br/> · Worked on persisting the contents of a cache of another service to be able to restore it after deployments
+                                                <br/> · Techstack: Spring, DynamoDB, Guava</p>
+                                    </div>
+
+                                    <div class="content-details content-border">
+                                        <h5>CybrHome</h5>
+                                        <h6>Dec 2015 - Mar 2016</h6>
+                                        <p>· Did a comparative study of different NoSql databases to store details for profile pages of websites
+                                                <br/>
+                                                · Implemented scrapers to fetch profile image links and fetch or guess social media links corresponding 
+                                                to websites and store them in the database to facilitate a fast search on them.
+                                                <br/>
+                                                · Wrote a scraper to scrape out useful information about websites from commoncrawl.org.
+                                                <br/>
+                                                · Techstack: Python, MongoDB</p>
+                                    </div>
+
+                                    <div class="content-details">
+                                        <h5>Bilent Services Private Limited</h5>
+                                        <h6>May 2015 - July 2015</h6>
+                                        <p>· Developed an application to sync customer data in GBs from different clients just before the end of the billing cycle
+                                                <br/>
+                                                · Implemented an algorithm to generate permanent kyashcodes for customers and send SMSs to them while billing.
+                                                <br/>
+                                                · Techstack: Flask, Google Cloud Datastore</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="experience-content">
+
+                                    <h4>Education</h4>
+
+                                    <div class="content-details">
+                                        <h5>National Innstitute of Technology Karnataka, Surathkal</h5>
+                                        <h6>July 2013 - May 2017</h6>
+                                        <p>I completed my Bachelors in Computer Engineering from here. It is among the top 10 colleges in the country</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>	
+                    </div>
+                </div>
+            </div>       
+        </section>
+
+        <!-- Sections -->
+        <section id="portfolio" class="sections">
+            <div class="container">
+
+                <div class="heading-content text-center">
+                    <h3>My Latest Works</h3>
+                    <!-- <p></p> -->
+                </div>
+
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="portfolio-wrapper">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/Chatbot.png" class="portfolio-img"><img src="assets/images/Chatbot.png" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/LanguageFilter.png" class="portfolio-img"><img src="assets/images/LanguageFilter.png" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/SegmentationOfBacteria.png" class="portfolio-img"><img src="assets/images/SegmentationOfBacteria.png" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/EncryptedKeywordSearch.png" class="portfolio-img"><img src="assets/images/EncryptedKeywordSearch.png" alt="" /></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="portfolio-wrapper">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/DistributedEditor.png" class="portfolio-img"><img src="assets/images/DistributedEditor.png" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/ns3filetransfer.png" class="portfolio-img"><img src="assets/images/ns3filetransfer.png" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf3.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf3.jpg" alt="" /></a>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+
+
+            </div> <!-- /container -->       
+        </section>
+
+        <!-- Sections -->
+        <!-- <section id="testimonial" class="lightbg">
+            <div class="container"> -->
+                <!-- Example row of columns -->
+                <!-- <div class="row">
+                    <div class="testimonial-wrapper sections4">
+
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="testimonial-content text-left">
+
+                                <div class="testimonial-quote">
+                                    <i class="fa fa-quote-left"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
+                                </div>
+
+                                <div class="singnature">
+                                    <img src="assets/images/signature.png" alt="Signature" />
+                                </div>
+
+                                <div class="regards-by">
+                                    <h5>Deniel Croft</h5>
+                                    <p>Creative Designer, Levy</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <div class="profile-photo">
+                                <img src="assets/images/man2.png" alt="testimonial" />
+                            </div>
+                        </div>
+
+                    </div> 
+                </div> -->
+            <!-- </div> <!-- /container -->       
+        <!-- </section> -->
+
+        <!-- Sections -->
+        <section id="contact" class="contact">
+            <div class="overlay sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-wrapper">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="contact-area">
+
+                                    <h4>Leave a message</h4>
+                                    <form>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name*">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email*">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject*">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea rows="9" class="form-control" placeholder="Message"></textarea>
+                                        </div>
+
+
+                                        <a type="submit" class="btn btn-default">Hire Me !</a>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="contact-details-area">
+
+                                    <div class="contact-details">
+                                        <h4>Address</h4>
+                                        <p>Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134, Block SE(A), Gulshan-1, Dhaka 1212.</p>
+                                    </div>
+
+                                    <!-- <div class="contact-details">
+                                        <h4>Phone</h4>
+                                    </div> -->
+
+                                    <div class="contact-details">
+                                        <h4>Web</h4>
+                                        <p>Mail: varshavp27@gmail.com</p>
+                                        <p>Linkedin: https://www.linkedin.com/in/varshavp27/</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>	
+                    </div>
+                </div>
+            </div>       
+        </section>
+
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <div class="main-footer">
+
+                            <div class="social">
+                                <a href="https://twitter.com/varshavp27"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/varshavp27/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/varshavp27"><i class="fa fa-github"></i></a>
+                                <a href="https://www.codechef.com/users/varshaprabhu"><i class="fa fa-codechef"></i></a>
+                                <a href="https://www.hackerrank.com/varshavp27"><i class="fa fa-hackerrank"></i></a>
+                                <a href="http://codeforces.com/profile/varshavp274"><i class="fa fa-codeforces"></i></a>
+                            </div>
+
+                            <p>Made with <i class="fa fa-heart"></i> by <a target="_blank" href="http://bootstrapthemes.co"> Bootstrap Themes </a>2016. All rights reserved.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/modernizr.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
