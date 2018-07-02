@@ -11,7 +11,7 @@ html,
 body {
     background-color: #ffffff;
     font-size: 16px;
-    color:#6B6B6B;
+    color:#000000;
     width: 100%;
     padding: 0;
     margin-left: 0;
@@ -269,7 +269,7 @@ section .subtitle-half h5 {
     margin-bottom: 4rem;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(6, 12, 17, 0.45);
     width: 100%;
     overflow:hidden;
     min-height:800px;
@@ -551,7 +551,7 @@ textarea::-ms-input-placeholder
     -o-transition:.3s ease-in-out;
 }
 .features-bg.development:hover{
-    background:#6b647c;
+    background:#8976b6;
 }
 .features-bg.testing{
     background:#002453;
@@ -624,6 +624,13 @@ textarea::-ms-input-placeholder
 /* For Portfolio Section*/
 .portfolio-item {
 	margin-bottom:20px;
+}
+
+.gallery-item {
+    margin-bottom:20px;
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .portfolio-wrapper2{
